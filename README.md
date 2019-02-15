@@ -18,7 +18,7 @@ We first performed undersampling of the dataset such that our dataset consisted 
 3) In addition, we also added the functionality of class weights to account for the unbalanced dataset.
 
 Results:
-Our model achieved impressive results of F1 0.675 in Phase 1 of the MSAI challenge(Phase 2 score is undisclosed by Microsoft). Thus, placing us in the top 1% of the leaderboard of 2000 team in the MSAI Challenge despite the fact that we had to stop training(on a fraction of the whole data) before convergence due to exhaustion of computation power.
+Our model achieved impressive results of F1 0.6715 in Phase 1 of the MSAI challenge(Phase 2 score is undisclosed by Microsoft). Thus, placing us in the top 1% of the leaderboard of 2000 team in the MSAI Challenge despite the fact that we had to stop training(on a fraction of the whole data) before convergence due to exhaustion of computation power.
 
 Future scope:
 1)Use boosting/ensembling when more processing becomes available.
