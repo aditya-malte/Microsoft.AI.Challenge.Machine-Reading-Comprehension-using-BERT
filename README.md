@@ -1,5 +1,5 @@
 # Microsoft AI Challenge(Top 20)
-#Team:Sushant Rathi, Shreyas Singh and I(Aditya Malte) 
+Team:Sushant Rathi, Shreyas Singh and I(Aditya Malte) 
 Dataset: Microsoft AI Challenge 2018 dataset as available on CodaLab
 Algorithm: Bidirectional Encoder Representation From Transformer(BERT)
 Model: BERT_BASE
