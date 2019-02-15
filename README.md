@@ -19,7 +19,7 @@ We first performed undersampling of the dataset such that our dataset consisted 
 
 Results:
 Our model achieved impressive results of F1 0.6715 in Phase 1 of the MSAI challenge(Phase 2 score is undisclosed by Microsoft). Thus, placing us in the top 1% of the leaderboard of 2000 team in the MSAI Challenge. This is despite the model being trained for very few epochs 
-and a small fraction of the training data.
+and on a small fraction of the training data.
 
 Future scope:
 1)Use boosting/ensembling when more processing becomes available.
