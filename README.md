@@ -1,3 +1,4 @@
+<pre>
 # Microsoft AI Challenge(Our Top 20 ranking Solution)
 Team:Sushant Rathi, Shreyas Singh and I(Aditya Malte) 
 
@@ -28,3 +29,4 @@ Future scope:
 3)Train on more epochs and data.
 4)Try training as a multi-classification task.
 
+</pre>
