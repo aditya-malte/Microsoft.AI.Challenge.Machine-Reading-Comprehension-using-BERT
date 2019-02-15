@@ -1,0 +1,36 @@
+# see: https://docs.floydhub.com/floyd_config
+# All supported configs:
+#
+machine: gpu
+env: tensorflow-1.11
+input:
+#  - source: sushant21/datasets/project1-dataset/8
+#  - source: sushant21/datasets/project1-eval-dataset/2
+#  - source: sushant21/datasets/project1-dataset/14
+ - source: sushant21/datasets/project1-pred-dataset/1
+   destination: data
+ - source: sushant21/datasets/project1-dataset/2
+   destination: models
+ - source: sushant21/datasets/project1-model/4
+   destination: trained_model
+
+
+#  - foo/datasets/yelp-food-test/1:test
+#description: this is a test
+# max_runtime: 3600
+# command: python run_classifier.py   --task_name=MSAI   --do_train=true   --do_eval=true   --data_dir=/data/   --vocab_file=/models/uncased_L-12_H-768_A-12/vocab.txt   --bert_config_file=/models/uncased_L-12_H-768_A-12/bert_config.json   --init_checkpoint=/trained_model/msai_output/model.ckpt-900   --max_seq_length=128   --train_batch_size=32   --learning_rate=2e-5   --num_train_epochs=2.0 --output_dir=./msai_output/ --loss_weight=1.0   
+# command: python run_classifier.py   --task_name=MSAI   --do_train=true   --do_eval=true   --data_dir=/data/   --vocab_file=/models/uncased_L-12_H-768_A-12/vocab.txt   --bert_config_file=/models/uncased_L-12_H-768_A-12/bert_config.json   --init_checkpoint=/trained_model/msai_output/model.ckpt-2699   --max_seq_length=128   --train_batch_size=32   --learning_rate=2e-5   --num_train_epochs=1.0 --output_dir=./msai_output/ --loss_weight=1.0   
+
+command: python run_classifier.py   --task_name=MSAI   --do_predict=true      --data_dir=/data/   --vocab_file=/models/uncased_L-12_H-768_A-12/vocab.txt   --bert_config_file=/models/uncased_L-12_H-768_A-12/bert_config.json   --init_checkpoint=/trained_model/msai_output/model.ckpt-900   --max_seq_length=128 --output_dir=./msai_output/ --loss_weight=1.0  
+
+
+# You can also define multiple tasks to use with --task argument:
+#
+#task:
+#  evaluate:
+#    machine: gpu
+#    command: python evaluate.py
+#
+#  serve:
+#    machine: cpu
+#    mode: serve
