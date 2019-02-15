@@ -12,7 +12,7 @@ The Microsoft AI Challenge was a competition held by Microsoft to improve their 
 As part of the MSAI Challenge, given a question query and 10 passages, our model has to choose the answer that most aptly answers the question.
 
 Our approach:
-1) Initially perform smart downsample to balance the unbalanced dataset:
+1) Smart downsampling to balance the unbalanced dataset:
 We first performed undersampling of the dataset such that our dataset consisted only of those passages that were closest to the ground truth passage. We used Okapi-BM25 to perform this undersampling, keeping the incorrect to correct ratio as 2:1.
 2) We then fine-tuned on BERT using its next-sentence prediction algorithm. To perform this task, we modified the MRPC class of BERT to suit our dataset. We trained this as a binary classification task. Finally, the highest ranking passage is the one with highest probability. 
 3) In addition, we also added the functionality of class weights to account for the unbalanced dataset.
