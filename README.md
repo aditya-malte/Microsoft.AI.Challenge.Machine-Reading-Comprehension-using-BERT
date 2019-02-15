@@ -1,4 +1,4 @@
-# Microsoft AI Challenge(Top 20)
+# Microsoft AI Challenge(Top 20 Solution)
 Team:Sushant Rathi, Shreyas Singh and I(Aditya Malte) 
 
 Dataset: Microsoft AI Challenge 2018 dataset as available on CodaLab
