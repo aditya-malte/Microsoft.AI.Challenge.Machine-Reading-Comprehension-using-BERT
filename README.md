@@ -1,4 +1,4 @@
-<pre>
+
 # Microsoft AI Challenge(Our top 20 ranking Solution)
 Team:Sushant Rathi, Shreyas Singh and I(Aditya Malte) 
 
@@ -14,7 +14,7 @@ their Bing search results and make them more succinct.
 As part of the MSAI Challenge, given a question query and 10 passages,
 our model has to choose the answer that most aptly answers the question.
 
-Our approach:
+## Our approach:
 1) Smart downsampling to balance the unbalanced dataset:
 We first performed undersampling of the dataset such that our dataset
 consisted only of those passages that were closest to the ground truth 
@@ -27,18 +27,18 @@ passage is the one with highest probability.
 3) In addition, we also added the functionality of class weights to account
 for the unbalanced dataset.
 
-Results:
+## Results:
 Our model achieved impressive results of F1 0.6715 in Phase 1 of the
 MSAI challenge(Phase 2 score is undisclosed by Microsoft). 
 Thus, placing us in the top 1% of the leaderboard of 2000 team in the MSAI Challenge. 
 This is despite the model being trained for very few epochs 
 and on a small fraction of the training data.
 
-Future scope:
+## Future scope:
 1)Use boosting/ensembling when more processing becomes available.
 2)Use Bert_LARGE
 2)Try more architectures for the final layer.
 3)Train on more epochs and data.
 4)Try training as a multi-classification task.
 
-</pre>
+
